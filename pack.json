@@ -1,0 +1,11 @@
+{
+  "name": "design-os-skills",
+  "sources": [
+    {"repo": "jangtrinh/design-os", "local": "src/design-os", "paths": ["skills/design-os", "skills/design-os-designer"], "group": "core"},
+    {"repo": "jangtrinh/design-os-figma-plugin", "local": "design-os-figma-plugin", "paths": ["skills/design-os-figma-agent", "skills/design-os-figma-craft"], "group": "core"},
+    {"repo": "jangtrinh/design-os-svg-animation", "local": "src/design-os-svg-animation", "paths": ["skills/line-art-motion", "skills/motion-video-recreation", "skills/product-designer", "skills/es-tutorial-video"], "group": "core"},
+    {"repo": "jangtrinh/design-os-3d-blender", "local": "src/design-os-3d-blender", "paths": ["skills/design-os-3d-blender", ".agents/skills/blender-agent-core", ".agents/skills/blender-image-to-3d", ".agents/skills/blender-knowledge-workbench"], "group": "core"},
+    {"repo": "jangtrinh/design-os-code2flow", "local": "src/design-os-code2flow", "paths": ["skills/design-os-code2flow", ".claude/skills/code2flow-map-codebase", ".claude/skills/code2flow-answer-flow-questions", ".claude/skills/code2flow-stories-from-prd"], "group": "core"},
+    {"repo": "jangtrinh/design-os-vietnamese", "local": "src/design-os-vietnamese", "paths": ["skills/*"], "group": "vietnamese"}
+  ]
+}

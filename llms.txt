@@ -1,0 +1,22 @@
+# design-os-skills
+
+> 32 agent skills from the DESIGN:OS suite (16 core, 16 Vietnamese-language) as SKILL.md folders for Claude Code, Codex and Cursor. Free, source-available under PolyForm Shield 1.0.0.
+
+## Install
+
+- Claude Code: `/plugin marketplace add jangtrinh/design-os-skills`, or clone and run `./install.sh --claude`.
+- Codex: `./install.sh --codex` (writes to ~/.agents/skills).
+- Cursor: `./install.sh --cursor` (writes to ~/.cursor/skills).
+- Add `--group all` for the Vietnamese skills, `--skill NAME` for one skill, `--dry-run` to preview.
+
+## Index
+
+- [README](README.md): skill table with one-line descriptions and source repos.
+- [skills.json](skills.json): machine-readable index with source repo, path and commit per skill.
+- [evidence.md](evidence.md): install tests and validation results.
+
+## FAQ
+
+- Is it free? Yes. Nothing is sold.
+- What licence? Source-available under PolyForm Shield 1.0.0: free to use and modify, not for resale or building a competing product.
+- Does a skill need a tool installed? Some do. For example design-os-figma-agent needs the figma-agent CLI from design-os-figma-plugin.

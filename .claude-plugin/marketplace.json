@@ -1,0 +1,8 @@
+{
+  "name": "design-os-skills",
+  "metadata": { "description": "Agent skills from the DESIGN:OS suite. Free, source-available (PolyForm Shield 1.0.0)." },
+  "owner": { "name": "Jang Trinh" },
+  "plugins": [
+    { "name": "design-os-skills", "source": "./", "description": "Design, motion, 3D, code-to-flow and Vietnamese-language skills for coding agents." }
+  ]
+}

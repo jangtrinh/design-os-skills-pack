@@ -1,0 +1,262 @@
+{
+  "name": "design-os-skills",
+  "count": 32,
+  "skills": [
+    {
+      "name": "blender-agent-core",
+      "group": "core",
+      "description": "Core discipline for ANY Blender/bpy work — contract-first, purpose-first (render-only / print / both), knowledge routing, execute-verify-refine loop with the AGENT_OK/AGENT_FAIL sentinel contract, numeric-first verification, Form gate before delivery media, production gate before delivery. Activate for every task that touches Blender, before any domain skill.",
+      "source_repo": "jangtrinh/design-os-3d-blender",
+      "source_path": ".agents/skills/blender-agent-core",
+      "source_commit": "c48936a"
+    },
+    {
+      "name": "blender-image-to-3d",
+      "group": "core",
+      "description": "Reconstruct assets in Blender from reference images using only native Blender geometry, local skills, and project workflows; includes fidelity contracts, staged passes, and visual verification.",
+      "source_repo": "jangtrinh/design-os-3d-blender",
+      "source_path": ".agents/skills/blender-image-to-3d",
+      "source_commit": "c48936a"
+    },
+    {
+      "name": "blender-knowledge-workbench",
+      "group": "core",
+      "description": "Retrieve and apply this Blender project's knowledge, engineering research and portable reference methods through a checked local catalog and bounded task workflows. Use when refreshing knowledge, compiling workflow/skill references, choosing sources or assembling a Blender task reading pack; scene execution remains owned by blender-agent-core.",
+      "source_repo": "jangtrinh/design-os-3d-blender",
+      "source_path": ".agents/skills/blender-knowledge-workbench",
+      "source_commit": "c48936a"
+    },
+    {
+      "name": "code2flow-answer-flow-questions",
+      "group": "core",
+      "description": "Answer questions about a scanned app's user flows from Code2Flow's machine-readable outputs — \"how does a user get from A to B\", \"which screens are unreachable or dead ends\", \"where does the PRD disagree with the code\", \"what is behind this arrow\" — with file:line evidence and confidence, without opening the canvas. Use after `code2flow run`/`scan` has produced `<repo>/.code2flow/graph.json`.",
+      "source_repo": "jangtrinh/design-os-code2flow",
+      "source_path": ".claude/skills/code2flow-answer-flow-questions",
+      "source_commit": "f97f1bb"
+    },
+    {
+      "name": "code2flow-map-codebase",
+      "group": "core",
+      "description": "Map a Next.js App Router repo into a Code2Flow user-flow canvas end to end (init → run → read the summary → report), respecting the fixed localhost port and leaving no server running. Use when a PO or teammate asks \"show me the flows / screens / how users move through this app\", when a PRD needs checking against code, or before writing user stories for an existing product.",
+      "source_repo": "jangtrinh/design-os-code2flow",
+      "source_path": ".claude/skills/code2flow-map-codebase",
+      "source_commit": "f97f1bb"
+    },
+    {
+      "name": "code2flow-stories-from-prd",
+      "group": "core",
+      "description": "Turn a PRD markdown into a Code2Flow Story Manifest (code2flow.stories.json v3, v2 structure plus optional audience captions, presenter notes, cues, Audience Names and locales for the Stage) using the prompt pack produced by `code2flow stories scaffold`, then validate it against the scanned graph and report PRD-vs-code drift. Use when a PO wants user-story lanes or a presentable Stage on the Code2Flow canvas, or when a PRD changed.",
+      "source_repo": "jangtrinh/design-os-code2flow",
+      "source_path": ".claude/skills/code2flow-stories-from-prd",
+      "source_commit": "f97f1bb"
+    },
+    {
+      "name": "design-os",
+      "group": "core",
+      "description": "Use when working with DESIGN:OS CLI — Multi-runtime design operating system and CLI for Claude Code, OpenAI Codex, Gemini CLI, and Google Antigravity.",
+      "source_repo": "jangtrinh/design-os",
+      "source_path": "skills/design-os",
+      "source_commit": "369b041"
+    },
+    {
+      "name": "design-os-3d-blender",
+      "group": "core",
+      "description": "Use when working with DESIGN:OS 3D Blender Agent — Parametric 3D mechanical parts generator, headless Blender Python (`bpy`) pipeline, and embedded Three.js CAD showcase engine.",
+      "source_repo": "jangtrinh/design-os-3d-blender",
+      "source_path": "skills/design-os-3d-blender",
+      "source_commit": "c48936a"
+    },
+    {
+      "name": "design-os-code2flow",
+      "group": "core",
+      "description": "Use when working with DESIGN:OS Code2Flow — Local-first AST codebase-to-user-flow mapper and 11-heuristic UX gap auditor across 7 frontend and mobile frameworks.",
+      "source_repo": "jangtrinh/design-os-code2flow",
+      "source_path": "skills/design-os-code2flow",
+      "source_commit": "f97f1bb"
+    },
+    {
+      "name": "design-os-designer",
+      "group": "core",
+      "description": "Use when shaping, implementing, critiquing, polishing, hardening or auditing rendered UI, then proving it with the ui gate and a three-width look.",
+      "source_repo": "jangtrinh/design-os",
+      "source_path": "skills/design-os-designer",
+      "source_commit": "369b041"
+    },
+    {
+      "name": "design-os-figma-agent",
+      "group": "core",
+      "description": "figma-agent — the CLI bridge to the Figma file already open in the designer's Figma desktop app, over a local WebSocket broker. SessionStart MAY have already run figma-agent status --peek and left its result in context (only if the optional install-hook was set up) — if no peek result is visible, run figma-agent status --peek first. When it reports a live connection, use THIS skill — not the DesignAgent MCP or any other Figma bridge — for every request to inspect, read, edit, or check the status of that open file: selection, nodes, layers, styles, components, variables, frames, screenshots, or making changes to the canvas. Read connection state, then read/write the open Figma document without the paid official write MCP.",
+      "source_repo": "jangtrinh/design-os-figma-plugin",
+      "source_path": "skills/design-os-figma-agent",
+      "source_commit": "36c207a"
+    },
+    {
+      "name": "design-os-figma-craft",
+      "group": "core",
+      "description": "Generic Figma canvas engineering discipline — the battle-tested workflow, laws, and Plugin-API failure-mode catalog for building/editing Figma files programmatically (design:os figma-agent CLI or use_figma MCP). Use for ANY project's Figma build/edit/componentize/verify work. Distilled from the VSF-PCP campaigns (2026-06 → 2026-08): every rule here paid for by a real incident.",
+      "source_repo": "jangtrinh/design-os-figma-plugin",
+      "source_path": "skills/design-os-figma-craft",
+      "source_commit": "36c207a"
+    },
+    {
+      "name": "es-tutorial-video",
+      "group": "core",
+      "description": "Use when turning a finished DESIGN:OS build folder into an A-to-Z tutorial video (16:9 + 9:16, evidence on screen, optional voice): storyboard, kit render, validate, look, owner gates.",
+      "source_repo": "jangtrinh/design-os-svg-animation",
+      "source_path": "skills/es-tutorial-video",
+      "source_commit": "2fff9e4"
+    },
+    {
+      "name": "line-art-motion",
+      "group": "core",
+      "description": "Turn one reference drawing (line art, logo, sketch) into a faithful, animated, interactive SVG page with video exports: centerline trace, part map, occlusion silhouette, deterministic physics-driven motion, hover layer, proofs, Pages publish.",
+      "source_repo": "jangtrinh/design-os-svg-animation",
+      "source_path": "skills/line-art-motion",
+      "source_commit": "2fff9e4"
+    },
+    {
+      "name": "motion-video-recreation",
+      "group": "core",
+      "description": "Recreate reference motion videos through HyperFrames v2, Motion IR, deterministic export, and source-to-output visual review.",
+      "source_repo": "jangtrinh/design-os-svg-animation",
+      "source_path": "skills/motion-video-recreation",
+      "source_commit": "2fff9e4"
+    },
+    {
+      "name": "product-designer",
+      "group": "core",
+      "description": "EaseUI & Linear/Stripe-caliber Product Designer & Design Architect. MUST be called whenever creating or refining animations, UI elements, video layouts, and motion mockups in this repo. Enforces multi-layer tactile depth, Gestalt layout, typography scale, 1px subtle borders, authentic SVGL logos, and zero-flop verification.",
+      "source_repo": "jangtrinh/design-os-svg-animation",
+      "source_path": "skills/product-designer",
+      "source_commit": "2fff9e4"
+    },
+    {
+      "name": "vietnamese-business-comms",
+      "group": "vietnamese",
+      "description": "Authoritative Vietnamese omnichannel marketing and B2B commercial communications engineering skill for DESIGN:OS. Enforces strict linguistic pragmatics (xưng - hô), channel quotas, and statutory compliance across Zalo OA (ZNS/ZBS 400-char NFC limit), email campaigns, Shopee/Lazada/TikTok Shop product titles and livestream scripts, corporate press releases, KOL/KOC briefs under Luật 75/2025/QH15, B2B cold outreach, commercial quotations (báo giá with VAT and validity terms), dunning sequences (T-3 to T+30), administrative dispatches (công văn under Nghị định 30/2020/NĐ-CP), and corporate Tết/holiday greetings.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-business-comms",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-cybersecurity-infosec",
+      "group": "vietnamese",
+      "description": "Drafts, localizes, and audits native-quality Vietnamese (vi-VN) cybersecurity incident communications, personal data breach notifications under Law 91/2025/QH15 Article 23 and Decree 356/2025/NĐ-CP (PDPD 72-hour notification to the Ministry of Public Security, Mẫu số 08), 5-tier information system security assessments under Decree 85/2016/NĐ-CP and Circular 12/2022/TT-BTTTT, vulnerability disclosures (CVE/CVSS advisories), and penetration testing reports. Enforces standard Vietnamese InfoSec terminology, eliminates awkward translationese calques, and guards against credential solicitation and sensitive data misclassification.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-cybersecurity-infosec",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-ecommerce-retail",
+      "group": "vietnamese",
+      "description": "Drafts, localizes, and audits native-quality Vietnamese (vi-VN) e-commerce storefront copy, product detail pages (PDP), promotional flash sale campaigns, checkout UX microcopy, and customer return policies. Enforces Ministry of Industry and Trade (Bộ Công Thương) badging accuracy under Decree 52/2013/NĐ-CP & Decree 85/2021/NĐ-CP (distinguishing blue 'Đã thông báo' from red 'Đã đăng ký' and banning false quality endorsement claims), statutory 50% promotional discount caps under Decree 81/2018/NĐ-CP & Decree 128/2024/NĐ-CP, mandatory product labeling disclosures under Decree 43/2017/NĐ-CP & Decree 111/2021/NĐ-CP, statutory consumer return rights under the Law on Protection of Consumers' Rights 2023 (Luật Bảo vệ quyền lợi người tiêu dùng 2023), and eliminates logistics translationese and manipulative checkout dark patterns.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-ecommerce-retail",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-education-copy",
+      "group": "vietnamese",
+      "description": "Writes, evaluates, and pedagogically audits native-quality Vietnamese (vi-VN) educational, academic, and EdTech communications across the full 7-tier Vietnamese Pedagogy Continuum (Mầm non -> Tiểu học -> THCS/THPT -> GDNN -> Đại học -> Thạc sĩ -> Tiến sĩ & GS/PGS). Enforces statutory Ministry of Education and Training (Bộ GD&ĐT) and Ministry of Labour, Invalids and Social Affairs (Bộ LĐ-TB&XH) circulars, including VBHN 01/VBHN-BGDĐT for preschool developmental milestones across 5 domains (forbidding numeric scores and K-12 grades), Thông tư 27/2020/TT-BGDĐT for primary education (mandating cần cố gắng over cần cải thiện), Thông tư 22/2021/TT-BGDĐT for secondary and high schools (THCS/THPT scale of Tốt/Khá/Đạt/Chưa đạt and abolition of học sinh tiên tiến), Thông tư 04/2022/TT-BLĐTBXH for TVET vocational modules and credits, Thông tư 08/2021/TT-BGDĐT for higher education (tín chỉ and decimal comma GPA notation), Thông tư 23/2021/TT-BGDĐT for Master's theses (luận văn / đề án thạc sĩ), Thông tư 18/2021/TT-BGDĐT & QĐ 37/2018/QĐ-TTg for Doctoral dissertations (luận án tiến sĩ) and academic rank (GS/PGS) vs academic degree (TS/ThS/Cử nhân) distinctions, and Thông tư 21/2019/TT-BGDĐT for diploma issuance (bản sao từ sổ gốc). Embeds modern learning science and EdTech AI tutoring frameworks (Spaced Repetition, 3PL IRT adaptive difficulty scaling, ZPD 3-tier scaffolding, Goodness of Pronunciation [GOP] Sandwich feedback for all 6 Vietnamese tones, and Self-Determination Theory to prevent overjustification), statutory child data protection compliance under Luật 91/2025/QH15 Điều 24 (minor double consent requiring verified approval from phụ huynh or người giám hộ), and sociolinguistic register discipline across edu-preschool, edu-k12-primary, edu-k12, edu-parent, edu-uni, and edu-postgrad.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-education-copy",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-finance-copy",
+      "group": "vietnamese",
+      "description": "Writes, localizes, and audits native-quality Vietnamese (vi-VN) financial, banking, accounting, and FinTech communications. Enforces statutory financial statement terminology under Thông tư 99/2025/TT-BTC (mandatory rename of Bảng cân đối kế toán to Báo cáo tình hình tài chính from 01/01/2026), electronic invoice (hóa đơn điện tử) field requirements and tax formatting under Nghị định 123/2020/NĐ-CP and Nghị định 70/2025/NĐ-CP (MST, thuế GTGT, số tiền bằng chữ), consumer lending and BNPL interest transparency under Thông tư 43/2016/TT-NHNN and Thông tư 18/2019/TT-NHNN (explicit fee schedule and total repayment cost for promotional 0% rates), securities solicitation restrictions under Luật Chứng khoán 2019 and Nghị định 38/2018/NĐ-CP (strict prohibition of guaranteed-return claims), investment-linked insurance disclaimers under Thông tư 67/2023/TT-BTC Điều 53 (mandating policyholder risk acknowledgment and non-deposit disclosure), digital asset regulatory parameters under Nghị quyết 05/2025/NQ-CP and Luật 71/2025, and FinTech payment microcopy (VietQR / NAPAS 247 instant interbank transfers, chip-based CCCD NFC scanning UX, and Quyết định 2345/QĐ-NHNN biometric authentication step-up rules for transactions over 10.000.000 ₫).",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-finance-copy",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-government-public-service",
+      "group": "vietnamese",
+      "description": "Drafts, localizes, and audits Vietnamese e-government communications, online public service portals (DVC toàn trình & một phần), administrative procedure guides (TTHC), VNeID electronic identity notifications, and citizen status updates. Enforces Decree 42/2022/NĐ-CP public service classifications, Law on Identification 2023 (Luật Căn cước 26/2023/QH15) and Decree 69/2024/NĐ-CP (VNeID Level 1 and Level 2), abolition of paper household books under Law on Residence 2020 (Luật Cư trú 68/2020/QH14) and Decree 104/2022/NĐ-CP, and administrative clerical standards under Decree 30/2020/NĐ-CP.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-government-public-service",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-healthcare-copy",
+      "group": "vietnamese",
+      "description": "Writes, localizes, and audits native-quality Vietnamese (vi-VN) healthcare, medical, hospital, EMR, clinical, pharmacy, and dietary supplement (TPCN) communications. Enforces statutory terminology under Luật Khám bệnh, chữa bệnh 2023 số 15/2023/QH15 (mandatory replacement of 'Chứng chỉ hành nghề' with 'Giấy phép hành nghề khám bệnh, chữa bệnh' from 01/01/2024), electronic medical record (EMR) documentation standards under Thông tư 32/2023/TT-BYT, national electronic prescription requirements under Thông tư 52/2017/TT-BYT and Thông tư 27/2021/TT-BYT (strict prohibition of vague dosage instructions like 'uống khi cần', 'uống tùy ý'), dietary supplement (TPCN) advertising rules under Nghị định 15/2018/NĐ-CP (mandatory statutory disclaimer 'Thực phẩm này không phải là thuốc và không có tác dụng thay thế thuốc chữa bệnh', strict ban on doctor testimonials and patient letters), prohibitions against absolute curative claims ('chữa khỏi hoàn toàn 100%', 'thần dược trị bách bệnh'), patient-centered communication and SPIKES breaking bad news protocol, discharge summary red-flag return instructions under Thông tư 32/2023, and health data confidentiality under Điều 10 Luật KCB and Luật 91/2025/QH15 Điều 26 PDPD.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-healthcare-copy",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-hospitality-travel",
+      "group": "vietnamese",
+      "description": "Writes, localizes, and audits native-quality Vietnamese (vi-VN) hospitality, resort, civil aviation, culinary F&B, and tourism communications. Enforces statutory hotel star rating boundaries under Luật Du lịch 2017 Điều 50 (1 to 5 stars only; prohibiting illegal 6-star or 7-star claims), transparent pricing under Luật Giá and Nghị định 109/2013/NĐ-CP (disclosing 5% service charge and 8% or 10% VAT for Net vs ++ rates), airline passenger care and refund rights during flight delays or cancellations under Thông tư 14/2015/TT-BGTVT and Thông tư 19/2023/TT-BGTVT, fine dining menu copywriting with mandatory allergen and tax footnotes, package tour contract structures under Luật Du lịch 2017 Điều 39 & 40, and courteous hospitality guest-address etiquette using the hospitality-luxury register (Quý khách).",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-hospitality-travel",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-hr-recruitment",
+      "group": "vietnamese",
+      "description": "Writes, localizes, and audits native-quality Vietnamese (vi-VN) human resources, talent acquisition, recruitment marketing, and employment compliance communications. Enforces statutory labor protections under Bộ luật Lao động 2019 (prohibiting recruitment discrimination under Điều 8 khoản 1, withholding original diplomas or identity documents under Điều 17, and illegal punitive wage deductions under Điều 128), statutory probation ceilings and 85% salary floor under Điều 25 & 26, transparent Gross vs Net compensation disclosures in Offer Letters, modern outcome-oriented Job Descriptions (JD) eliminating toxic workplace clichés, objective Situation-Behavior-Impact (SBI) performance appraisals (OKR / KPI / 360 Feedback), and candidate-centric etiquette using the hr-candidate register (Anh/Chị).",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-hr-recruitment",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-insurance-insurtech",
+      "group": "vietnamese",
+      "description": "Drafts, localizes, and audits native-quality Vietnamese (vi-VN) life insurance illustrations, general insurance policies, InsurTech digital platforms, claim settlement guides, and bancassurance agreements. Enforces Law on Insurance Business 2022 (Luật Kinh doanh bảo hiểm số 08/2022/QH15) and Circular 67/2023/TT-BTC, mandatory 21-day free-look periods (thời gian cân nhắc 21 ngày Điều 35), affirmative disclosure of liability exclusions (Điều 19), 15-day statutory claim settlement timelines (Điều 31), statutory roles (Bên mua bảo hiểm, Người được bảo hiểm, Người thụ hưởng Điều 4), prohibition of disguising investment-linked insurance as fixed bank savings deposits, and anti-coercion regulations in bancassurance credit disbursement.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-insurance-insurtech",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-landing-copy",
+      "group": "vietnamese",
+      "description": "Writes, optimizes, and audits high-converting native Vietnamese (vi-VN) landing pages and digital marketing copy across 6 critical verticals — SaaS/AI developer tools, FinTech & digital banking, E-Commerce & D2C, Real Estate & luxury hospitality, Healthcare & aesthetics, and Enterprise B2B solutions. Master of Persuade-mode scroll architecture, benefit-driven Hero headline formulas, conventional CTAs, lead-form PDPA consent (Luật 91/2025/QH15 & Nghị định 356/2025/NĐ-CP), statutory e-commerce footer disclosures (Nghị định 52/2013/NĐ-CP & 85/2021/NĐ-CP Bộ Công Thương), and typography/locale gates. Fixes translationese calques, passive agent corruptions, illegal advertising superlatives, and broken Unicode or number formatting.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-landing-copy",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-legal-contracts",
+      "group": "vietnamese",
+      "description": "Drafts, localizes, and audits native-quality Vietnamese (vi-VN) civil and commercial agreements, corporate governance contracts, Terms of Service (ToS), and Data Processing Agreements (DPA). Enforces statutory penalty caps under Article 301 of Commercial Law 2005 (Luật Thương mại 2005 trần phạt vi phạm 8%), general contract freedom under Civil Code 2015 (Bộ luật Dân sự 2015 Điều 418), deposit mechanisms (Điều 328), force majeure (Điều 156), and fundamental change of circumstances (Điều 420), statutory labor contract classifications under Labor Code 2019 (Bộ luật Lao động 2019 Điều 20 bãi bỏ hợp đồng mùa vụ, chỉ công nhận không xác định thời hạn và xác định thời hạn tối đa 36 tháng; thử việc Điều 25-26), non-compete agreements (NCA) and confidentiality agreements (NDA) under Article 21 Clause 2 BLLĐ and VIAC arbitration practice, unconscionable contract terms prohibition under Consumer Protection Law 2023 (Luật Bảo vệ quyền lợi người tiêu dùng 2023 Điều 25 cấm miễn trừ toàn bộ trách nhiệm và tước đoạt quyền khiếu nại của người tiêu dùng), Personal Data Protection Law compliance (Luật 91/2025/QH15 Điều 4 quyền của chủ thể dữ liệu gồm rút lại sự đồng ý và xóa dữ liệu, Điều 23 thông báo vi phạm dữ liệu trong 72 giờ cho Bộ Công an A05, Điều 24 DPIA và Điều 25 chuyển dữ liệu ra nước ngoài), and software intellectual property assignments under amended IP Law 2022 (Luật Sở hữu trí tuệ sửa đổi 2022 Điều 19 quyền nhân thân không thể chuyển nhượng vs Điều 20 quyền tài sản).",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-legal-contracts",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-media-journalism-pr",
+      "group": "vietnamese",
+      "description": "Drafts, localizes, and audits native-quality Vietnamese (vi-VN) journalism copy, official press releases, press corrections and apologies under Article 42 of the Press Law 2016, and constructive crisis PR communications. Enforces constitutional presumption of innocence (Hiến pháp 2013 & BLTTHS 2015), strict child identity protection under the Law on Children 2016, Internet general news website (ICP) regulatory boundaries under Decree 147/2024/NĐ-CP, and eliminates clumsy English PR translationese.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-media-journalism-pr",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-real-estate-construction",
+      "group": "vietnamese",
+      "description": "Drafts, localizes, and audits native-quality Vietnamese (vi-VN) real estate project communications, off-plan residential sales contracts, booking agreements, condominium brochures, and construction BOQ specifications. Enforces statutory deposit caps (5%) under Article 23 Clause 5 and installment payment schedules (30%/70%/95%) under Article 25 of the Law on Real Estate Business 2023 (Luật Kinh doanh bất động sản 2023), land tenure accuracy (condotel/officetel 50-year leasehold vs residential title) under Land Law 2024 (Luật Đất đai 2024), apartment carpet area (thông thủy vs tim tường) under Article 141 and mandatory 2% apartment maintenance fund under Article 152 of Housing Law 2023 (Luật Nhà ở 2023), and eliminates construction BOQ English calques under Decree 37/2015/NĐ-CP.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-real-estate-construction",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vietnamese-tech-writing",
+      "group": "vietnamese",
+      "description": "Writes, edits, and audits native-quality Vietnamese (vi-VN) engineering, cloud, and product documentation — including commit subjects, PR reviews, RFCs, ADRs, blameless postmortems, operational runbooks, READMEs, API docs, CLI/UI error microcopy, i18n message catalogs, release notes, user research surveys, and app-store metadata. Master of technical code-switching taxonomy (Keep-EN vs Translate-VI vs Context-Split), impersonal system registers (eliminating 'bạn' in specs), bare imperative runbooks, non-blaming error microcopy, acquiescence bias mitigation in surveys, platform character limits, and Telex/VNI IME composition hazards.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vietnamese-tech-writing",
+      "source_commit": "0bd39d3"
+    },
+    {
+      "name": "vn-design-system-ux",
+      "group": "vietnamese",
+      "description": "Vietnamese UI/UX microcopy, design systems, typography tokens, stacked-diacritic line-height gates, button/tab/badge/toast character caps, state copy (empty, loading, optimistic, partial failure, destructive modals, biometric/passkey prompts, AI streaming UX), widow/orphan compound-word binding (\\\\u00A0), and en.json <-> vi.json i18n parity.",
+      "source_repo": "jangtrinh/design-os-vietnamese",
+      "source_path": "skills/vn-design-system-ux",
+      "source_commit": "0bd39d3"
+    }
+  ]
+}
