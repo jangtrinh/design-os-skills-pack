@@ -12,7 +12,6 @@ In Claude Code you can also add it as a plugin marketplace:
 /plugin marketplace add jangtrinh/design-os-skills
 /plugin install design-os-skills@design-os-skills
 ```
-
 Or from a clone, for any agent:
 
 ```bash
@@ -24,7 +23,6 @@ cd design-os-skills
 ./install.sh --claude --group all            # also the Vietnamese-language skills
 ./install.sh --codex --skill design-os-figma-agent --dry-run
 ```
-
 `--project` installs into the current repo (`./.claude/skills`, `./.agents/skills`, `./.cursor/skills`) instead of your home folder. Existing skills are skipped unless you pass `--force`. `--dry-run` prints the plan and writes nothing. The script only copies folders and never runs anything inside a skill.
 
 Folders checked against the docs of each tool: [Cursor](https://cursor.com/docs/skills), [Codex](https://developers.openai.com/codex/skills), [Claude Code](https://code.claude.com/docs/en/skills).
