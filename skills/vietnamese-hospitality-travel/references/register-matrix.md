@@ -26,7 +26,7 @@ This file is the canonical source of truth. `validate_copy.py` parses the `<!-- 
 | `press` | `quý vị` | `bạn`, `mình`, `bọn mình`, `cả nhà` | Press releases (`thông cáo báo chí`), corporate investor relations, public statements |
 | `livestream` | `cả nhà` | `quý vị`, `quý khách` | TikTok Shop / Shopee Live spoken scripts, social commerce flash-sale callouts |
 | `eng-impersonal` | | `bạn`, `quý khách`, `quý vị`, `anh/chị`, `em`, `con` | RFCs, ADRs, architecture specs, postmortems, runbooks, system design docs |
-| `eng-readme` | `bạn` | `quý khách`, `quý vị` | Open-source READMEs, SDK quickstarts, developer tutorials, API guides |
+| `eng-readme` | `bạn` | `quý khách`, `quý vị` | Public READMEs, SDK quickstarts, developer tutorials, API guides |
 | `finance-formal` | `quý khách` | `bạn`, `mình`, `cả nhà` | Financial statements (`BCTC`), tax filings, e-invoices, credit/loan disclosures, insurance contracts |
 | `edu-k12` | `em` | `bạn`, `quý khách`, `quý vị` | Secondary/High school (THCS/THPT) teacher-to-student remarks, `học bạ`, AI tutor for grades 6–12 |
 | `edu-k12-primary` | `con` | `bạn`, `quý khách`, `quý vị`, `em` | Primary school (Tiểu học, grades 1–5) teacher-to-student remarks, pastoral feedback |
