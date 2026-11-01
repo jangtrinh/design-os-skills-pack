@@ -9,14 +9,14 @@ Each skill is a folder with a `SKILL.md` in the [Agent Skills](https://agentskil
 In Claude Code you can also add it as a plugin marketplace:
 
 ```text
-/plugin marketplace add jangtrinh/design-os-skills
+/plugin marketplace add jangtrinh/design-os-skills-pack
 /plugin install design-os-skills@design-os-skills
 ```
 Or from a clone, for any agent:
 
 ```bash
-git clone https://github.com/jangtrinh/design-os-skills.git
-cd design-os-skills
+git clone https://github.com/jangtrinh/design-os-skills-pack.git
+cd design-os-skills-pack
 ./install.sh --claude            # Claude Code  → ~/.claude/skills
 ./install.sh --codex             # Codex        → ~/.agents/skills
 ./install.sh --cursor            # Cursor       → ~/.cursor/skills

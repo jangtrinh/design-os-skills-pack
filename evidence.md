@@ -56,5 +56,5 @@ SKILL.md files under tmp home:
 ## Not tested
 
 - Loading the installed skills inside Claude Code, Codex and Cursor (needs each app signed in on a desktop).
-- `/plugin marketplace add jangtrinh/design-os-skills` (needs the repo to be public).
+- `/plugin marketplace add jangtrinh/design-os-skills-pack` (needs the repo to be public).
 - Skills that call an external CLI (figma-agent, Blender, code2flow) were copied, not run.

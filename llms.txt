@@ -4,7 +4,7 @@
 
 ## Install
 
-- Claude Code: `/plugin marketplace add jangtrinh/design-os-skills`, or clone and run `./install.sh --claude`.
+- Claude Code: `/plugin marketplace add jangtrinh/design-os-skills-pack`, or clone and run `./install.sh --claude`.
 - Codex: `./install.sh --codex` (writes to ~/.agents/skills).
 - Cursor: `./install.sh --cursor` (writes to ~/.cursor/skills).
 - Add `--group all` for the Vietnamese skills, `--skill NAME` for one skill, `--dry-run` to preview.
